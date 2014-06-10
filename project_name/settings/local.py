@@ -7,7 +7,7 @@ database_dir = os.path.join(BASE_DIR, 'databases')
 if not os.path.exists(database_dir):
 	os.mkdir(database_dir)
 
-media_dir = os.path.join(BASE_PATH, 'media')
+media_dir = os.path.join(BASE_DIR, 'media')
 
 if not os.path.exists(media_dir):
 	os.mkdir(media_dir)

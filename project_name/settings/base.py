@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 import {{ project_name }} as project_module
 
-sys.path.insert(0, os.path.join(BASE_PATH, "apps"))
+sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 
 
 # Quick-start development settings - unsuitable for production
