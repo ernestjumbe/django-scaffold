@@ -15,7 +15,8 @@ from django.conf.global_settings import *
 import os
 import sys
 from {{ project_name}}.settings.secrets import *
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+PROJECT_DIR = os.path.dirname(os.path.realpath(project_module.__file__))
+BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 import {{ project_name }} as project_module
 
@@ -24,11 +25,6 @@ sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c4xgz$*b)qxkfg!t(_r)mw%+x_w!8(zq@1bdxr8h5a)xm$xg*s'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 
 ALLOWED_HOSTS = []
 
