@@ -1,6 +1,5 @@
 *.pyc
 *.egg-info
 databases/*
-static/*
 media/*
 secrects.py
