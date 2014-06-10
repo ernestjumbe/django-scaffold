@@ -2,12 +2,12 @@ from {{project_name}}.settings.base import *
 DEBUG = True
 TEMPLATE_DEBUG = True
 
-database_dir = os.path.join(PROJECT_DIR, 'databases')
+database_dir = os.path.join(BASE_DIR, 'databases')
 
 if not os.path.exists(database_dir):
 	os.mkdir(database_dir)
 
-media_dir = os.path.join(PROJECT_DIR, 'media')
+media_dir = os.path.join(BASE_DIR, 'media')
 
 if not os.path.exists(media_dir):
 	os.mkdir(media_dir)
