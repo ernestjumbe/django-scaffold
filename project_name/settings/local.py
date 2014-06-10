@@ -28,17 +28,15 @@ INSTALLED_APPS += (
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
-
-STATIC_URL = '/static/'
 
 #==============================================================================
 # Templates
 #==============================================================================
 
 TEMPLATE_DIRS = (
-	os.path.join(BASE_DIR, 'templates'),
+	os.path.join(PROJECT_DIR, 'templates'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS += (
