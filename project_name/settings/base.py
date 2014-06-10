@@ -7,7 +7,7 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-
+from django.conf.global_settings import *
 #==============================================================================
 # Calculation of directories relative to the project module location
 #==============================================================================
@@ -94,6 +94,9 @@ USE_TZ = True
 #==============================================================================
 # Auth / security
 #==============================================================================
+
+AUTHENTICATION_BACKENDS += (
+)
 
 #==============================================================================
 # Miscellaneous project settings
