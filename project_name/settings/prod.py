@@ -1,7 +1,8 @@
 """Settings for Production Server"""
 from celebrateafrica.settings.base import *
 
-
+DEBUG = False
+TEMPLATE_DEBUG = False
 
 ADMINS = (
     #('You', 'your@mail'),
@@ -32,6 +33,8 @@ DATABASES = {
 INSTALLED_APPS += (
     #'gunicorn',
 )
+
+PREPEND_WWW = True
 
 WSGI_APPLICATION = '{{project_name}}.wsgi.application'
 
