@@ -44,6 +44,10 @@ LANGUAGES = (
     ('en', 'English'),
 )
 
+DATE_FORMAT = 'd B Y'
+
+DATETIME_FORMAT = 'd B Y H:M'
+
 
 # Application definition
 
