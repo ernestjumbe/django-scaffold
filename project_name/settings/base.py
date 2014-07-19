@@ -17,7 +17,7 @@ import sys
 from {{project_name}}.settings.secrets import *
 
 
-import {{project_name }} as project_module
+import {{project_name}} as project_module
 
 PROJECT_DIR = os.path.dirname(os.path.realpath(project_module.__file__))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
